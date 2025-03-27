@@ -4,7 +4,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <TodoItem/>
+      <TodoItem/>
+      <TodoItem/>
+      <TodoItem/>
+
       <header className="App-header">
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edita el archivo <code>src/App.js</code> y guarda para recargar.
@@ -16,10 +22,19 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          
         </a>
       </header>
     </div>
   );
 }
-
+  function TodoItem(){
+    return(
+      <li>
+        <span>v </span> 
+        <p>hacer papa </p>  
+        <span>x</span>  
+      </li>
+    );
+  }
 export default App;
